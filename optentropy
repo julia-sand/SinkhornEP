@@ -12,7 +12,7 @@ import sinkhorn_pointcloud
 epsilon = 0.2 
 T = 2 #final time for t0
 Tf = (epsilon**2)*T  #final time for t2
-h_step = 0.0001 #FOR T=2 use: 0.0001 #0.000025#for histograms: 0.0001
+h_step = 0.01 #FOR T=2 use: 0.0001 #0.000025#for histograms: 0.0001
 
 #decimal places for the time lookup.
 dps =  int(np.ceil(-np.log10(h_step))+1)
