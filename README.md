@@ -4,40 +4,7 @@ SinkhornAutoDiff - Python toolbox to integrate optimal transport loss functions 
 Overview
 ------
 
-Python toolbox to compute and differentiate Optimal Transport (OT) distances. It computes the cost using (generalization of) Sinkhorn's algorithm [1], which can in turn be applied:
-- To optimize barycenters and their weights [2].
-- To perform shape registration [9].
-- As a loss between machine learning features [1].
-- To perform density fitting for generative model [8] (see also image bellow).
-
-<img src="img/fig-general.jpg" width="80%" alt="Typical example of usage: Sinkhorn for density fitting" align="middle"/>
-
-Organization
-------
-
-- code/ contains the core routine to compute OT losses and their differentials.
-- notebooks/ contains a collection of [Jupyter notebooks](http://jupyter.org/) that showcase simple usage of the toolbox.
-
-Planed Features
-------
-
-- Classical Sinkhorn using matrix/vector multiplications [1].
-- Acceleration for separable kernels (e.g. Gaussian kernels for images) [5].
-- Log-domain stabilized Sinkhorn [7].
-- Unbalanced transport (for several f-divergence fidelity) [7].
-- Heavy-ball acceleration [10].
-- Barycenters [7].
-- Gromov-Wasserstein [4].
-- Dictionary learning [3].
-
-
-Installation
-------
-
-Current implementations are available using the following automatic-differentiation toolboxes:
-- [Theano](http://deeplearning.net/software/theano/)
-- [TensorFlow](https://www.tensorflow.org/)
-- [Chainer](https://chainer.org/)
+I forked this repository to try to solve an optimal transport assignment. 
 
 References:
 ------
